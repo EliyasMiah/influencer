@@ -6,6 +6,7 @@
 .header-section{
     max-width: 1440px;
     margin: 0 auto;
+
 }
 .nav-container{
 display: flex;
@@ -53,14 +54,15 @@ align-items: center;
     display: flex;
     align-items: center;
     margin: 0 auto;
+    justify-content: space-between;
 }
 .header-content-container, .header-content-camera {
     width: 50%;
     
 }
-.header-content-container{
-    margin-left: 133px;
-
+.header-content-camera{
+    width: 100%;
+    height: 100%;
 }
 .header-title{
     font-size: 3.25rem;
@@ -84,14 +86,115 @@ align-items: center;
     height: 475px;
 }
 .logo-container{
-box-shadow: rgba(0, 0, 0, 0.06);
+    
 }
-
 .logo{
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
     margin-top: 25px;
     max-width: 1110px;
+    box-shadow: -1px 0px 1px 0px gray;
+    padding: 10px;
     
+}
+/* product section style */
+
+.popular-section{
+    margin-top: 100px;
+}
+.product-section-header{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1050px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.popular-product{
+    border: none;
+    width: 330px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 0px gray;
+}
+.product-name{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: rgba(24, 25, 31, 1);
+}
+.description{
+    font-size: 14px;
+    color: rgba(120, 120, 133, 1);
+}
+.see-more{
+    color: #E02C6D;
+}
+/* Feature section style */
+.feature-section{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+
+}
+.feature-contant{
+    margin-left: 100px;
+    width: 50%;
+}
+.feature-header{
+    font-size: 1.37rem;
+    font-weight: 700;
+    color: #0A0826;
+}
+.feature-description{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6C6C6C;
+}
+.btn-squre{
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+footer{
+    background-color: #0A0826;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px;
+    width: calc(100% - 50px)/2;
+}
+.footer-header, .copy-right, .all-right{
+    color: white;
+}
+.footer-header{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.copy-right, .all-right{
+    font-size: .90rem;
+    font-weight: 700;
+    color: rgba(217, 219, 225, 1);
+}
+.social-media img{
+    width: 32px;
+    height: 32px;
+    margin-left: 16px;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-container{
+        flex-direction: column;
+    }
 }
