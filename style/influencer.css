@@ -197,6 +197,9 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+  .nav-container{
+    flex-direction: column;
+  }
   .header-container {
     flex-direction: column;
     gap: 20px;
@@ -237,5 +240,8 @@ footer {
 }
 .feature-header{
   text-align: center;
+}
+.nav ul{
+  flex-direction: column;
 }
 }
